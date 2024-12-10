@@ -1,0 +1,123 @@
+        :root {
+            --primary-color: #c39bd3;  /* morado */
+            --secondary-color: #333;  /* Gris oscuro */
+            --light-color: #f8f9fa;  /* Blanco claro */
+            --dark-overlay: rgba(0, 0, 0, 0.7);  /* Overlay oscuro */
+            --highlight-color: #ffd1bf;  /* Color de hover en botones */
+            --accent-color: #ff6f00;  /* Un tono cálido más suave */
+        }
+
+        /* Navegación */
+        .navbar {
+            background-color: var(--dark-overlay);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--light-color) !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        
+        /* Resaltar las cards al pasar el cursor */
+        .pista-card, .precio-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pista-card:hover, .precio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Ajustar el texto dentro de las cards */
+        .pista-card .card-text, 
+        .precio-card .card-text {
+            font-size: 1.2rem;
+        }
+        main {
+            background-image: url('../img/v1030-064.jpg');
+            background-size: cover; /* Ajusta el tamaño para que cubra todo el área del <main> */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            min-height: 100vh; /* Asegura que el <main> ocupe al menos la altura de la ventana */
+            padding-top: 2%;
+        }
+        .table {
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .table-hover tbody tr:hover {
+                background-color: #fdf2d1;
+                cursor: pointer;
+            }
+
+            h3.text-primary {
+                font-weight: bold;
+                margin-bottom: 15px;
+                border-bottom: 2px solid #f39c12;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+
+            .badge.bg-success {
+                font-size: 0.85rem;
+                padding: 5px 10px;
+            }
+            .table-hover tbody tr:hover {
+                background-color: #fdf2d1;
+            }
+
+        .table-responsive {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .badge {
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        form p {
+            margin-bottom: 0;
+        }
+
+        .btn-lg {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .shadow-lg {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    /* Footer */
+    .footer {
+        background-color: var(--secondary-color);
+        color: var(--light-color);
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .footer h3 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer p, .footer a {
+        color: var(--light-color);
+    }
+
+    .footer a:hover {
+        color: var(--primary-color);
+    }

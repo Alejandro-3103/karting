@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #c39bd3;  /* morado */
+    --secondary-color: #333;  /* Gris oscuro */
+    --light-color: #f8f9fa;  /* Blanco claro */
+    --dark-overlay: rgba(0, 0, 0, 0.7);  /* Overlay oscuro */
+    --highlight-color: #ffd1bf;  /* Color de hover en botones */
+    --accent-color: #ff6f00;  /* Un tono cálido más suave */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-image: url('../img/v1030-064.jpg');
+    background-size: cover; /* Ajusta el tamaño para que cubra todo el área del <main> */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Asegura que el <main> ocupe al menos la altura de la ventana */
+    padding-top: 2%;
+}
+
+/* Navegación */
+.navbar {
+    background-color: var(--dark-overlay);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--light-color) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(var(--dark-overlay), var(--dark-overlay)), url('../img/contacta.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.hero-section .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Carrusel */
+/* Sección base para el carrusel con una separación adecuada */
+.section-carrusel-info, .section-carrusel-reversed {
+    display: flex;
+    justify-content: center; /* Asegura que los elementos se distribuyan bien */
+    align-items: center;
+    gap: 10rem; /* Ajuste en el espacio entre los divs del carrusel */
+    padding: 2rem 0;
+}
+
+/* Contenedor de los carruseles con altura y márgenes adecuados */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;  /* Altura fija para ambos carruseles */
+    width: 33.3%;
+    margin-top: 20px; /* Espaciado adicional si es necesario */
+}
+
+/* Aseguramos que el carrusel ocupe el 100% del espacio disponible */
+.carousel-inner {
+    width: 100%;
+}
+
+/* Asegurar que las imágenes no se deformen */
+.carousel-inner img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%; /* Las imágenes llenan todo el contenedor */
+    object-fit: cover; /* Asegura que las imágenes se ajusten sin deformarse */
+}
+
+/* Estilos para los controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* Descripción de los carruseles */
+.description-container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Sección de Características */
+#caracteristicas {
+    padding: 4rem 0;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Sección de servicios */
+.feature-box {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo personalizado para los iconos */
+.icon-carrera, .icon-evento, .icon-escuela {
+    color: #c39bd3; /* El color morado claro */
+}
+
+/* CTA */
+.cta-section {
+    background-color: var(--primary-color);
+    background-image: url('path/to/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cta-section .btn {
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.cta-section .btn:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.footer p, .footer a {
+    color: var(--light-color);
+}
+
+.footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+
+    .section-carrusel-info, .section-carrusel-reversed {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-carrusel-info .carousel-container,
+    .section-carrusel-reversed .carousel-container {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .section-carrusel-info .description-container,
+    .section-carrusel-reversed .description-container {
+        order: 2;
+        max-width: 100%;
+    }
+    .carousel-inner img {
+        height: auto;  /* Cambiamos la altura para que se ajuste mejor a dispositivos más pequeños */
+        max-height: 300px;  /* Establecemos una altura máxima para evitar que la imagen sea demasiado grande */
+    }
+
+    .carousel-container {
+        width: 100%; /* Asegura que el carrusel ocupe todo el espacio disponible */
+        height: auto;  /* Permite que la altura se ajuste dependiendo del contenido */
+    }
+}
