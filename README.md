@@ -1,9 +1,32 @@
-El proyecto maneja las distintas funcionalidades para la gestion de un karting.                                                                                                                                                                                                          
+Karting Web 
+Karting Emocion es una aplicación web diseñada para gestionar un circuito de karting de forma moderna y eficiente. Ofrece funcionalidades para socios y administradores, mejorando la experiencia del usuario al facilitar la reserva de pistas y el acceso a información clave.
+
+Características Principales
+Para Socios:
+Registro y acceso a una cuenta personal.
+Reserva de pistas indicando fecha, hora, duración y participantes.
+Consulta y comparación de tiempos en un entorno competitivo.
+
+Para Administradores:
+Gestión completa de socios, reservas, pistas, tiempos y precios desde un panel visual.
+Para Usuarios no registrados:
+Acceso a información general del circuito.
+
+Tecnologías Utilizadas
+Lenguaje: PHP
+Base de datos: MySQL
+Frameworks: Bootstrap para diseño responsive
+
+Este proyecto está diseñado para ofrecer comodidad y eficiencia tanto a los usuarios como al personal administrativo del circuito de karting.
+
+
+//IMPORTANTE!!!!!
 Una vez que tengas el proyecto en tu carpeta htdocs esta es la ruta para acceder a la landing page principal para usuarios no logueados:   http://localhost/karting/vistas/index.php
 Si quieres entrar al panel del administrador, en el login, tienes que introducir de nombre de usuario admin y de contraseña también admin.  
 Si quieres acceder al paner de socios logeados, tendrás que registrar un usuario en la pagina del login en el apartado registrarse, volver al login y logearte con las credenciales con las que te acabas de registrar.               
 
-Script sql de inserción de datos para probar la aplicación: 
+
+//Script sql de inserción de datos para probar la aplicación(OPCIONAL): 
 
 -- Insertar datos en la tabla socios
 INSERT INTO socios (id, nombre_usuario, contrasena, email, fecha_registro) VALUES
